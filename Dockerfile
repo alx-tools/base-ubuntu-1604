@@ -12,6 +12,10 @@ RUN apt-get -y upgrade
 RUN apt-get install -y vim
 RUN apt-get install -y emacs
 
+# Add Sudo and curl
+RUN apt-get install -y curl
+RUN apt-get install -y sudo
+
 # SSH
 RUN apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
